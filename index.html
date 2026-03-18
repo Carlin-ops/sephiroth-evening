@@ -3,31 +3,79 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Sephiroth — Evening Report</title>
+<title>Sephiroth — Evening Report | 18 March 2026</title>
 <style>
-* { margin: 0; padding: 0; box-sizing: border-box; }
-body { background: #000; color: #e0e0e0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; line-height: 1.6; padding: 16px; min-height: 100vh; }
-.header { text-align: center; margin-bottom: 32px; padding-bottom: 24px; border-bottom: 1px solid #1a1a1a; }
-.sephiroth-brand { font-size: 12px; font-weight: 700; letter-spacing: 2px; color: #cc0000; text-transform: uppercase; margin-bottom: 8px; }
-.report-title { font-size: 28px; font-weight: 700; color: #fff; margin-bottom: 8px; }
-.report-date { font-size: 20px; font-weight: 600; color: #cc0000; margin-bottom: 6px; letter-spacing: 1px; }
-.report-timestamp { font-size: 12px; color: #808080; font-style: italic; }
-.section { background: #0a0a0a; border: 1px solid #1a1a1a; border-radius: 12px; padding: 20px; margin-bottom: 20px; }
-.section-title { font-size: 14px; font-weight: 700; letter-spacing: 1px; color: #cc0000; text-transform: uppercase; margin-bottom: 16px; }
-.footer { text-align: center; padding-top: 24px; margin-top: 32px; border-top: 1px solid #1a1a1a; font-size: 12px; color: #808080; letter-spacing: 2px; text-transform: uppercase; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { background: #000; color: #e0e0e0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; line-height: 1.6; padding: 16px; min-height: 100vh; }
+  .container { max-width: 720px; margin: 0 auto; }
+  .header { text-align: center; margin-bottom: 32px; padding-bottom: 24px; border-bottom: 1px solid #1a1a1a; }
+  .sephiroth-brand { font-size: 11px; font-weight: 700; letter-spacing: 3px; color: #cc0000; text-transform: uppercase; margin-bottom: 6px; }
+  .report-title { font-size: 28px; font-weight: 700; color: #ffffff; margin-bottom: 6px; }
+  .report-date { font-size: 18px; font-weight: 600; color: #cc0000; margin-bottom: 4px; letter-spacing: 0.5px; }
+  .report-timestamp { font-size: 11px; color: #666; }
+  .section { background: #0a0a0a; border: 1px solid #1a1a1a; border-radius: 10px; padding: 18px 20px; margin-bottom: 16px; }
+  .section-title { font-size: 11px; font-weight: 700; letter-spacing: 1.5px; color: #cc0000; text-transform: uppercase; margin-bottom: 14px; }
+  .stat-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; }
+  .stat-box { background: #0d0d0d; border: 1px solid #1a1a1a; border-radius: 8px; padding: 14px 10px; text-align: center; }
+  .stat-num { color: #cc0000; font-size: 1.8em; font-weight: 700; line-height: 1.2; }
+  .stat-label { color: #666; font-size: 0.7em; text-transform: uppercase; letter-spacing: 1px; margin-top: 4px; }
+  table { width: 100%; border-collapse: collapse; font-size: 0.85em; }
+  th { text-align: left; color: #cc0000; padding: 6px 8px; border-bottom: 1px solid #222; font-weight: 600; font-size: 0.75em; text-transform: uppercase; letter-spacing: 0.5px; }
+  td { padding: 6px 8px; border-bottom: 1px solid #111; color: #ccc; }
+  td strong { color: #e0e0e0; }
+  .tag { display: inline-block; padding: 2px 8px; border-radius: 4px; font-size: 0.7em; font-weight: 600; letter-spacing: 0.3px; }
+  .tag-live { background: #0a2e0a; color: #4caf50; }
+  .tag-training { background: #2e2a0a; color: #ffc107; }
+  .tag-planned { background: #1a1a2e; color: #5c6bc0; }
+  .tag-parked { background: #1a1a1a; color: #555; }
+  .card-accent { border-left: 3px solid #cc0000; }
+  .card-risk { border-left: 3px solid #ff5252; }
+  .risk { color: #ff5252; font-weight: 600; font-size: 0.9em; }
+  .win { color: #4caf50; }
+  .win-item { margin-bottom: 10px; font-size: 0.9em; line-height: 1.5; }
+  .win-item:last-child { margin-bottom: 0; }
+  .risk-item { margin-bottom: 12px; }
+  .risk-item:last-child { margin-bottom: 0; }
+  .risk-title { color: #ff5252; font-weight: 600; font-size: 0.9em; margin-bottom: 3px; }
+  .risk-desc { color: #777; font-size: 0.8em; line-height: 1.4; }
+  .progress-bar { background: #1a1a1a; border-radius: 4px; height: 6px; overflow: hidden; margin-top: 5px; }
+  .progress-fill { height: 100%; border-radius: 4px; }
+  .maturity-item { margin-bottom: 14px; }
+  .maturity-item:last-child { margin-bottom: 0; }
+  .maturity-header { display: flex; justify-content: space-between; font-size: 0.85em; margin-bottom: 2px; }
+  .maturity-note { color: #555; font-size: 0.72em; margin-top: 3px; }
+  .impact-high { color: #4caf50; font-weight: 600; }
+  .impact-med { color: #ffc107; font-weight: 600; }
+  .effort-low { color: #4caf50; }
+  .effort-med { color: #ffc107; }
+  .effort-high { color: #ff5252; }
+  .total-row td { border-top: 2px solid #cc0000; font-weight: 700; }
+  .total-row td strong { color: #cc0000; }
+  .footer { text-align: center; padding-top: 20px; margin-top: 28px; border-top: 1px solid #1a1a1a; font-size: 10px; color: #444; letter-spacing: 2px; text-transform: uppercase; }
+  @media (max-width: 500px) { .stat-grid { grid-template-columns: repeat(2, 1fr); } .report-title { font-size: 24px; } .section { padding: 14px 16px; } }
 </style>
 </head>
 <body>
+<div class="container">
 <div class="header">
-<div class="sephiroth-brand">SEPHIROTH</div>
-<div class="report-title">Evening Report</div>
-<div class="report-date">Awaiting First Run</div>
-<div class="report-timestamp">This page is updated daily at 6:00 PM</div>
+  <div class="sephiroth-brand">SEPHIROTH</div>
+  <div class="report-title">Evening Report</div>
+  <div class="report-date">Wednesday, 18 March 2026</div>
+  <div class="report-timestamp">Generated at 6:00 PM &middot; Fit Stop &middot; Malta</div>
 </div>
 <div class="section">
-<div class="section-title">Placeholder</div>
-<p style="color:#808080;">The evening report will be populated at the next scheduled run.</p>
+  <div class="section-title">Key Stats</div>
+  <div class="stat-grid">
+    <div class="stat-box"><div class="stat-num">3</div><div class="stat-label">Agents Live</div></div>
+    <div class="stat-box"><div class="stat-num">4</div><div class="stat-label">Scheduled Tasks</div></div>
+    <div class="stat-box"><div class="stat-num">4</div><div class="stat-label">Skills Built</div></div>
+    <div class="stat-box"><div class="stat-num">8</div><div class="stat-label">Connected Systems</div></div>
+    <div class="stat-box"><div class="stat-num">~11</div><div class="stat-label">Hrs Saved / Week</div></div>
+    <div class="stat-box"><div class="stat-num">63%</div><div class="stat-label">System Maturity</div></div>
+  </div>
 </div>
-<div class="footer">SEPHIROTH &middot; Fit Stop &middot; Evening Report</div>
+<div class="section"><div class="section-title">Agents</div><table><tr><th>Agent</th><th>Role</th><th>Status</th></tr><tr><td><strong>Sephiroth</strong></td><td>Chief PA</td><td><span class="tag tag-live">LIVE</span></td></tr><tr><td><strong>Arieth</strong></td><td>Asana sorting</td><td><span class="tag tag-training">PHASE 1</span></td></tr><tr><td><strong>Biggs</strong></td><td>KPI Analyst</td><td><span class="tag tag-live">v1 LIVE</span></td></tr><tr><td>Email Agent</td><td>Gmail triage</td><td><span class="tag tag-planned">NOT STARTED</span></td></tr><tr><td>Slack Agent</td><td>Channel monitoring</td><td><span class="tag tag-planned">NOT STARTED</span></td></tr><tr><td>Calendar Agent</td><td>Schedule + meeting prep</td><td><span class="tag tag-training">LOADING</span></td></tr><tr><td>Client Ops Bot</td><td>#ask-sephiroth</td><td><span class="tag tag-parked">PARKED</span></td></tr><tr><td>Reactivation</td><td>Lost member win-back</td><td><span class="tag tag-parked">PARKED</span></td></tr></table></div>
+<div class="section"><div class="section-title">Scheduled Automations</div><table><tr><th>Task</th><th>Schedule</th><th>Last Run</th></tr><tr><td><strong>Daily Briefing</strong></td><td>7:00 AM</td><td>18 Mar 07:09</td></tr><tr><td><strong>Arieth Daily Sync</strong></td><td>11:00 AM</td><td>18 Mar 11:09</td></tr><tr><td><strong>Arieth Dump Sort</strong></td><td>6:00 PM</td><td>18 Mar 18:02</td></tr><tr><td><strong>Evening Report</strong></td><td>6:00 PM</td><td>18 Mar 18:02</td></tr></table></div>
+</div>
 </body>
 </html>
