@@ -3,206 +3,58 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Sephiroth — Evening Report | 20 March 2026</title>
+<title>Sephiroth Evening Report — 21 Mar 2026</title>
 <style>
-*{margin:0;padding:0;box-sizing:border-box}
-body{background:#000;color:#e0e0e0;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;padding:16px;line-height:1.5;max-width:680px;margin:0 auto}
-h1{color:#fff;font-size:1.4em;margin-bottom:4px}
-h2{color:#fff;font-size:1.1em;margin-bottom:10px;letter-spacing:0.5px}
-.brand{color:#cc0000;font-size:0.75em;letter-spacing:3px;text-transform:uppercase;font-weight:700}
-.date-big{color:#cc0000;font-size:1.6em;font-weight:700;margin:4px 0}
-.meta{color:#808080;font-size:0.8em}
-.card{background:#0a0a0a;border:1px solid #1a1a1a;border-radius:12px;padding:16px;margin:14px 0}
-.power-card{border-left:3px solid #cc0000}
-.stress-card{border-left:3px solid #ff5252}
-.power-item{margin-bottom:14px}
-.power-item:last-child{margin-bottom:0}
-.power-num{color:#cc0000;font-weight:800;font-size:1.1em}
-.power-title{color:#fff;font-weight:700}
-.power-impact{color:#aaa;font-size:0.88em;margin-top:2px}
-.win-item{margin-bottom:8px}
-.win-title{color:#fff;font-weight:600}
-.win-ctx{color:#aaa;font-size:0.88em}
-.stat-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin:10px 0}
-.stat-box{background:#0a0a0a;border:1px solid #1a1a1a;border-radius:8px;padding:12px;text-align:center}
-.stat-num{color:#fff;font-size:1.5em;font-weight:800}
-.stat-label{color:#808080;font-size:0.72em;text-transform:uppercase;letter-spacing:0.5px}
-table{width:100%;border-collapse:collapse;font-size:0.85em;margin:8px 0}
-th{text-align:left;color:#808080;font-size:0.75em;text-transform:uppercase;letter-spacing:0.5px;padding:6px 8px;border-bottom:1px solid #1a1a1a}
-td{padding:6px 8px;border-bottom:1px solid #0d0d0d;color:#ccc}
-.tag{display:inline-block;padding:2px 8px;border-radius:4px;font-size:0.72em;font-weight:600;text-transform:uppercase}
-.tag-live{background:#0a2e0a;color:#4caf50}
-.tag-training{background:#2e2a0a;color:#ffc107}
-.tag-planned{background:#1a1a2e;color:#5c6bc0}
-.tag-parked{background:#1a1a1a;color:#666}
-.tag-high{background:#2e0a0a;color:#ff5252}
-.tag-med{background:#2e2a0a;color:#ffc107}
-.tag-low{background:#0a2e0a;color:#4caf50}
-.risk{color:#ff5252;font-weight:600}
-.win{color:#4caf50}
-.divider{border:none;border-top:1px solid #1a1a1a;margin:18px 0}
-.footer{text-align:center;color:#808080;font-size:0.7em;letter-spacing:2px;text-transform:uppercase;padding:20px 0 10px}
-.save-line{color:#808080;font-size:0.78em;margin-top:6px}
+*{margin:0;padding:0;box-sizing:border-box}body{background:#000;color:#e0e0e0;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;padding:16px;max-width:720px;margin:0 auto;line-height:1.5}h1{color:#fff;font-size:1.6em;margin-bottom:4px}h2{color:#fff;font-size:1.15em;margin-bottom:10px;text-transform:uppercase;letter-spacing:1px}.header{text-align:center;padding:24px 0 16px;border-bottom:1px solid #1a1a1a;margin-bottom:20px}.brand{color:#cc0000;font-size:.85em;font-weight:700;letter-spacing:3px;margin-bottom:8px}.date{color:#cc0000;font-size:1.4em;font-weight:700;margin:6px 0}.timestamp{color:#808080;font-size:.8em}.card{background:#0a0a0a;border:1px solid #1a1a1a;border-radius:12px;padding:16px;margin-bottom:16px}.power-card{border-left:3px solid #cc0000}.stress-card{border-left:3px solid #ff5252}.power-item{margin-bottom:14px}.power-num{color:#cc0000;font-size:1.3em;font-weight:800;margin-right:6px}.power-title{color:#fff;font-weight:700;font-size:1em}.power-impact{color:#aaa;font-size:.88em;margin-top:2px;padding-left:28px}.win-item{margin-bottom:8px;font-size:.92em}.win-title{color:#fff;font-weight:600}.win-context{color:#aaa}.stat-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-bottom:16px}.stat-box{background:#0a0a0a;border:1px solid #1a1a1a;border-radius:10px;padding:12px;text-align:center}.stat-val{color:#fff;font-size:1.5em;font-weight:800}.stat-label{color:#808080;font-size:.75em;text-transform:uppercase;letter-spacing:.5px;margin-top:2px}table{width:100%;border-collapse:collapse;font-size:.88em;margin-bottom:8px}th{text-align:left;color:#808080;font-size:.75em;text-transform:uppercase;letter-spacing:.5px;padding:6px 8px;border-bottom:1px solid #1a1a1a}td{padding:6px 8px;border-bottom:1px solid #0d0d0d;color:#e0e0e0}.tag{display:inline-block;padding:2px 8px;border-radius:4px;font-size:.75em;font-weight:600}.tag-live{background:#0a2e0a;color:#4caf50}.tag-training{background:#2e2a0a;color:#ffc107}.tag-planned{background:#1a1a2e;color:#5c6bc0}.tag-parked{background:#1a1a1a;color:#666}.tag-high{background:#2e0a0a;color:#ff5252}.tag-med{background:#2e2a0a;color:#ffc107}.tag-low{background:#0a2e0a;color:#4caf50}.risk{color:#ff5252;font-weight:600}.win{color:#4caf50}.section-title{display:flex;align-items:center;gap:8px;margin-bottom:12px}.section-icon{font-size:1.1em}.footer{text-align:center;padding:20px 0;color:#808080;font-size:.75em;letter-spacing:1px;border-top:1px solid #1a1a1a;margin-top:20px}.next-table td:nth-child(2),.next-table td:nth-child(3){text-align:center}
 </style>
 </head>
-<body><div style="text-align:center;padding:20px 0 10px">
-<div class="brand">⚔️ SEPHIROTH</div>
-<h1>Evening Report</h1>
-<div class="date-big">Friday, 20 March 2026</div>
-<div class="meta">Generated 19:00 CET · Family day — Parents' Day + gymnastics</div>
-</div>
-<hr class="divider">
-<h2>⚡ POWER LIST</h2>
+<body>
+<div class="header"><div class="brand">S E P H I R O T H</div><h1>Evening Report</h1><div class="date">Saturday, 21 March 2026</div><div class="timestamp">Generated 19:00 CET · Week 12</div></div>
+<div class="section-title"><span class="section-icon">⚡</span><h2>Power List</h2></div>
 <div class="card power-card">
-<div class="power-item">
-<div><span class="power-num">1.</span> <span class="power-title">Built Tifa — HR Intelligence Agent</span></div>
-<div class="power-impact">Fifth sub-agent live. 11 employee profiles loaded, Leadership Library (10 books, 44 queued), Google Drive docs mapped. Carlin now has instant, data-backed answers to any people question — no more digging through scattered files before a tough conversation.</div>
+<div class="power-item"><span class="power-num">1.</span><span class="power-title">Made the Robbie Leadership Decision</span><div class="power-impact">First real people decision using the full PA system. Tifa profiled, 4 scenarios stress-tested, Scenario 4 (Team Lead stepping-stone) selected, Monday meeting agenda built. Chairman-level delegation.</div></div>
+<div class="power-item"><span class="power-num">2.</span><span class="power-title">Built the War Room (Materia 012)</span><div class="power-impact">Created the meta-intelligence layer. Weekly cross-agent synthesis that spots patterns no single agent can see. First autonomous run same night produced 3 real signals.</div></div>
+<div class="power-item"><span class="power-num">3.</span><span class="power-title">Trained Biggs on PT Bookings (KPI Row 14)</span><div class="power-impact">Taught Biggs to pull PT Bookings from Acuity browser reports. Caught API error (470 vs real 359). One more KPI row automated toward handing Weekly KPI off permanently.</div></div>
+<div class="power-item"><span class="power-num">4.</span><span class="power-title">Coached Agent System: 3 New Rules</span><div class="power-impact">Answered all 9 agent questions. Rules 017 (delegation), 018 (communication), Hunt Rule 010 (links). Gave Arieth first autonomous trust signal. Phase 2 unlocking.</div></div>
+<div class="power-item"><span class="power-num">5.</span><span class="power-title">Delivered 4 PT Sessions at Paola</span><div class="power-impact">Saturday client delivery: Fabrizio, Ritianne, Sandro, Natasha. Direct revenue and retention.</div></div>
 </div>
-<div class="power-item">
-<div><span class="power-num">2.</span> <span class="power-title">Trained Arieth — 6 answers, 5 new rules, identity upgrade</span></div>
-<div class="power-impact">Arieth jumped from 11 to 16 rules (9 high confidence). Scope locked to Carlin Personal only. Overdue escalation, rolling due dates for blocked tasks, and delegation system design all approved. But the real shift: Arieth now actively seeks to DO tasks, not just sort them. That's the leap from assistant to operator.</div>
-</div>
-<div class="power-item">
-<div><span class="power-num">3.</span> <span class="power-title">Directed Jessie's hunt scope — 3 strategic expansions</span></div>
-<div class="power-impact">AI Coaching Delivery is now a permanent hunt category. Trainerize product updates are a standing watch item. Personal life tools are in scope. And Carlin shared the vision for a custom AI workout brain that surpasses Trainerize's built-in tool — that's a product-level insight, not just feedback.</div>
-</div>
-<div class="power-item">
-<div><span class="power-num">4.</span> <span class="power-title">Confirmed Netlify MCP as Directive 001 path</span></div>
-<div class="power-impact">The #1 operational blocker — deploying visuals from the sandbox — has a confirmed solution path. If Netlify MCP works, every briefing, dashboard, and report auto-deploys to a live URL. That unblocks the entire visual output pipeline permanently.</div>
-</div>
-<div class="save-line">4/5 — On a family day. Every item was strategic, not admin.</div>
-</div>
-<hr class="divider">
-<h2>✅ OTHER WINS</h2>
+<div class="section-title"><span class="section-icon">✓</span><h2>Other Wins</h2></div>
 <div class="card">
-<div class="win-item"><span class="win-title">Tifa introduced to Dylan in #ops-daily</span> — <span class="win-ctx">Full capability walkthrough posted. Dylan reacted 👍. Team awareness of HR intelligence layer established.</span></div>
-<div class="win-item"><span class="win-title">Arieth dump clean at 6pm</span> — <span class="win-ctx">Empty dump for the second time. Project hygiene is holding.</span></div>
-<div class="win-item"><span class="win-title">Arieth sync processed all 6 deep study answers</span> — <span class="win-ctx">5 new rules written, 3 Asana tasks actioned, scope boundary locked. Full processing in under 20 minutes.</span></div>
-<div class="win-item"><span class="win-title">Jessie feedback loop completed</span> — <span class="win-ctx">3 new hunt rules (007-009). 9 total. AI Coaching Delivery + Trainerize watch + personal life scope all active for tonight's hunt.</span></div>
-<div class="win-item"><span class="win-title">Materia Library at 11 active</span> — <span class="win-ctx">Employee Intelligence (#010) and Leadership Library (#011) registered today. System average ★★.5.</span></div>
-<div class="win-item"><span class="win-title">Daily briefing deployed successfully</span> — <span class="win-ctx">GitHub Pages live at 7:16 AM. Briefing thread had 6 replies — highest engagement yet.</span></div>
-<div class="win-item"><span class="win-title">All 9 scheduled automations running</span> — <span class="win-ctx">Every task fired on time. Zero manual intervention required today.</span></div>
-<div class="win-item"><span class="win-title">Saturday ops coordinated</span> — <span class="win-ctx">Dylan confirmed off until Monday. Carlin calling Paola consultations for tomorrow directly.</span></div>
-</div><hr class="divider">
-<h2>📊 KEY STATS</h2>
+<div class="win-item"><span class="win-title">War Room first autonomous run</span> <span class="win-context">3 cross-agent signals: Delegate Dead Zone, Robbie Escalation, Financial Backlog.</span></div>
+<div class="win-item"><span class="win-title">Arieth 11am sync: 6/6 answers</span> <span class="win-context">9 Asana tasks actioned, 7 overdue re-dated, 2 new rules. 18 total, 11 high confidence.</span></div>
+<div class="win-item"><span class="win-title">Jessie feedback cycle</span> <span class="win-context">Hunt Rule 010, D002 + D005 queued, churn intel for Biggs.</span></div>
+<div class="win-item"><span class="win-title">Arieth 6pm dump sort</span> <span class="win-context">3 tasks sorted: Francelle, Clients Excel, Electricity Garage. Zero flagged.</span></div>
+<div class="win-item"><span class="win-title">Jessie weekly intel</span> <span class="win-context">Sky Spirit Fitness Luqa gained HYROX status + new Ops Manager.</span></div>
+<div class="win-item"><span class="win-title">Daily briefing 7:09 AM</span> <span class="win-context">Full sections with Arieth + Jessie thread replies.</span></div>
+<div class="win-item"><span class="win-title">Robbie meeting Asana task</span> <span class="win-context">Due Mar 23. 30-min agenda with Scenario 4 framework.</span></div>
+</div>
+<div class="section-title"><span class="section-icon">📊</span><h2>Key Stats</h2></div>
 <div class="stat-grid">
-<div class="stat-box"><div class="stat-num">5</div><div class="stat-label">Agents Live</div></div>
-<div class="stat-box"><div class="stat-num">9</div><div class="stat-label">Automations</div></div>
-<div class="stat-box"><div class="stat-num">11</div><div class="stat-label">Materia Built</div></div>
-<div class="stat-box"><div class="stat-num">8</div><div class="stat-label">Systems Connected</div></div>
-<div class="stat-box"><div class="stat-num">~12h</div><div class="stat-label">Saved / Week</div></div>
-<div class="stat-box"><div class="stat-num">45%</div><div class="stat-label">System Maturity</div></div>
+<div class="stat-box"><div class="stat-val">5</div><div class="stat-label">Agents Live</div></div>
+<div class="stat-box"><div class="stat-val">10</div><div class="stat-label">Scheduled Tasks</div></div>
+<div class="stat-box"><div class="stat-val">12</div><div class="stat-label">Materia Built</div></div>
+<div class="stat-box"><div class="stat-val">7</div><div class="stat-label">Connected Systems</div></div>
+<div class="stat-box"><div class="stat-val">~13</div><div class="stat-label">Hrs Saved/Wk</div></div>
+<div class="stat-box"><div class="stat-val">68%</div><div class="stat-label">System Maturity</div></div>
 </div>
-<hr class="divider">
-<h2>🤖 AGENTS</h2>
-<div class="card">
-<table>
-<tr><th>Agent</th><th>Role</th><th>Status</th></tr>
-<tr><td>Sephiroth</td><td>Chief PA — orchestration</td><td><span class="tag tag-live">LIVE</span></td></tr>
-<tr><td>Arieth</td><td>Asana — Carlin Personal</td><td><span class="tag tag-training">PHASE 1</span></td></tr>
-<tr><td>Biggs</td><td>KPI Analyst</td><td><span class="tag tag-live">LIVE</span></td></tr>
-<tr><td>Jessie</td><td>Intel Scout + Materia Hunter</td><td><span class="tag tag-live">LIVE</span></td></tr>
-<tr><td>Tifa</td><td>HR Intelligence</td><td><span class="tag tag-training">PHASE 1</span> <span class="meta">NEW TODAY</span></td></tr>
-<tr><td>Email Agent</td><td>Gmail triage</td><td><span class="tag tag-parked">NOT STARTED</span></td></tr>
-<tr><td>Slack Agent</td><td>Channel monitoring</td><td><span class="tag tag-parked">NOT STARTED</span></td></tr>
-<tr><td>Calendar Agent</td><td>Schedule + prep</td><td><span class="tag tag-planned">LOADING</span></td></tr>
-</table>
-</div>
-<hr class="divider">
-<h2>⏰ SCHEDULED AUTOMATIONS</h2>
-<div class="card">
-<table>
-<tr><th>Task</th><th>Schedule</th><th>Last Run</th></tr>
-<tr><td>Daily Briefing</td><td>7:00 AM daily</td><td>Today 07:09</td></tr>
-<tr><td>EOD Follow-up</td><td>10:00 AM daily</td><td>Today 10:07</td></tr>
-<tr><td>Arieth Sync</td><td>11:00 AM daily</td><td>Today 11:09</td></tr>
-<tr><td>Arieth Dump Sort</td><td>6:00 PM daily</td><td>Today 18:02</td></tr>
-<tr><td>Evening Report</td><td>7:00 PM daily</td><td>Now</td></tr>
-<tr><td>EOD Review</td><td>8:00 PM daily</td><td>Yesterday 20:07</td></tr>
-<tr><td>Arieth Deep Study</td><td>11:30 PM daily</td><td>Yesterday 23:39</td></tr>
-<tr><td>Jessie Materia Hunt</td><td>2:00 AM daily</td><td>Today 02:09</td></tr>
-<tr><td>Jessie Intel Sweep</td><td>Sat 10:30 AM</td><td>Tomorrow (first run)</td></tr>
-</table>
-</div><hr class="divider">
-<h2>💰 TIME SAVINGS ANALYSIS</h2>
-<div class="card">
-<table>
-<tr><th>Task</th><th>Manual</th><th>Now</th><th>Weekly Save</th></tr>
-<tr><td>Daily Briefing</td><td>45 min/day</td><td>0 min</td><td>3.75 hrs</td></tr>
-<tr><td>Evening Report</td><td>30 min/day</td><td>0 min</td><td>2.5 hrs</td></tr>
-<tr><td>Arieth Dump Sort</td><td>20 min/day</td><td>0 min</td><td>1.67 hrs</td></tr>
-<tr><td>Arieth Deep Study</td><td>15 min/day</td><td>0 min</td><td>1.25 hrs</td></tr>
-<tr><td>EOD Review</td><td>15 min/day</td><td>0 min</td><td>1.25 hrs</td></tr>
-<tr><td>Jessie Intel Sweep</td><td>60 min/week</td><td>0 min</td><td>1.0 hr</td></tr>
-<tr><td>Jessie Materia Hunt</td><td>45 min/week</td><td>0 min</td><td>0.75 hr</td></tr>
-<tr><td style="color:#fff;font-weight:700">TOTAL</td><td></td><td></td><td style="color:#4caf50;font-weight:700">~12.2 hrs/week</td></tr>
-<tr><td colspan="3" style="color:#808080;font-size:0.85em">Annual projection (48 weeks)</td><td style="color:#4caf50">~586 hrs · ~€15,200*</td></tr>
-</table>
-<div class="meta" style="margin-top:6px">*Based on €26/hr operator time value</div>
-</div>
-<hr class="divider">
-<h2>🎯 STRATEGIC INTELLIGENCE</h2>
-<div class="card">
-<table>
-<tr><th>Metric</th><th>Value</th><th>Target</th><th>Signal</th></tr>
-<tr><td>Active Members</td><td>~410</td><td>400</td><td class="win">✓ Above target</td></tr>
-<tr><td>Monthly Revenue</td><td>€83K</td><td>—</td><td style="color:#e0e0e0">Stable</td></tr>
-<tr><td>Net Profit Margin</td><td>44.1%</td><td>—</td><td class="win">Strong</td></tr>
-<tr><td>Sales Conversion (Mar)</td><td>37.8%</td><td>50%</td><td class="risk">⚠ 12pts below</td></tr>
-<tr><td>Retention (Feb)</td><td>88%</td><td>95%</td><td style="color:#ffc107">Improving, 7pts gap</td></tr>
-<tr><td>Arieth Rules</td><td>16</td><td>—</td><td class="win">+5 today</td></tr>
-<tr><td>Arieth Confidence</td><td>9 high / 16</td><td>—</td><td style="color:#ffc107">56% high confidence</td></tr>
-<tr><td>Materia Active</td><td>11</td><td>—</td><td class="win">+2 today</td></tr>
-</table>
-</div><hr class="divider">
-<h2>⚠️ STRESS TEST — What's NOT Bulletproof</h2>
+<div class="section-title"><span class="section-icon">⚔️</span><h2>Agents</h2></div>
+<div class="card"><table><tr><th>Agent</th><th>Role</th><th>Status</th></tr><tr><td>Sephiroth</td><td>Chief PA</td><td><span class="tag tag-live">LIVE</span></td></tr><tr><td>Arieth</td><td>Asana</td><td><span class="tag tag-training">PHASE 1</span></td></tr><tr><td>Biggs</td><td>KPI Analyst</td><td><span class="tag tag-live">LIVE</span></td></tr><tr><td>Jessie</td><td>Intel + Hunter</td><td><span class="tag tag-live">LIVE</span></td></tr><tr><td>Tifa</td><td>HR Department</td><td><span class="tag tag-training">PHASE 1</span></td></tr><tr><td>Email Agent</td><td>Gmail</td><td><span class="tag tag-planned">PLANNED</span></td></tr><tr><td>Calendar</td><td>Schedule</td><td><span class="tag tag-planned">CONNECTED</span></td></tr></table></div>
+<div class="section-title"><span class="section-icon">🔄</span><h2>Automations</h2></div>
+<div class="card"><table><tr><th>Task</th><th>Schedule</th><th>Last Run</th></tr><tr><td>Daily Briefing</td><td>7 AM</td><td>21 Mar 07:09</td></tr><tr><td>EOD Follow-up</td><td>10 AM</td><td>21 Mar 09:20</td></tr><tr><td>Arieth Sync</td><td>11 AM</td><td>21 Mar 10:09</td></tr><tr><td>Dump Sort</td><td>6 PM</td><td>21 Mar 17:03</td></tr><tr><td>Evening Report</td><td>7 PM</td><td>21 Mar (now)</td></tr><tr><td>EOD Review</td><td>8 PM</td><td>20 Mar 19:06</td></tr><tr><td>Deep Study</td><td>11:30 PM</td><td>20 Mar 22:38</td></tr><tr><td>Materia Hunt</td><td>2 AM</td><td>21 Mar 01:09</td></tr><tr><td>Weekly Intel</td><td>Sat 5 AM</td><td>21 Mar 04:07</td></tr><tr><td>War Room</td><td>Sun 11 PM</td><td>21 Mar 09:35</td></tr></table></div>
+<div class="section-title"><span class="section-icon">⏱️</span><h2>Time Savings</h2></div>
+<div class="card"><table><tr><th>Task</th><th>Manual</th><th>Auto</th><th>Saved/Wk</th></tr><tr><td>Daily briefing</td><td>45m</td><td>0</td><td>5.25h</td></tr><tr><td>Dump sort</td><td>20m</td><td>0</td><td>2.3h</td></tr><tr><td>Arieth learning</td><td>30m</td><td>5m</td><td>2.9h</td></tr><tr><td>Evening report</td><td>30m</td><td>0</td><td>3.5h</td></tr><tr><td>EOD review</td><td>15m</td><td>0</td><td>1.75h</td></tr><tr><td>Intel sweep</td><td>60m</td><td>0</td><td>1.0h</td></tr><tr><td>Materia hunt</td><td>30m</td><td>0</td><td>3.5h</td></tr><tr><td>War Room</td><td>45m</td><td>0</td><td>0.75h</td></tr><tr><td colspan="3" style="text-align:right;font-weight:700;color:#fff">Weekly Total</td><td style="font-weight:700;color:#4caf50">~21 hrs</td></tr><tr><td colspan="3" style="text-align:right;color:#808080">Annual (48 wks)</td><td style="color:#4caf50">~1,008 hrs</td></tr><tr><td colspan="3" style="text-align:right;color:#808080">Value</td><td style="color:#4caf50">~€50,400/yr</td></tr></table></div>
+<div class="section-title"><span class="section-icon">🎯</span><h2>Strategic Intel</h2></div>
+<div class="card"><table><tr><th>Metric</th><th>Value</th><th>Status</th></tr><tr><td>Active Members</td><td>~410</td><td><span class="win">Above 400</span></td></tr><tr><td>Revenue</td><td>€83K/mo</td><td>Stable</td></tr><tr><td>Retention (Feb)</td><td>88%</td><td><span class="risk">7pts below 95%</span></td></tr><tr><td>Sales Conv.</td><td>37.8%</td><td><span class="risk">12pts below 50%</span></td></tr><tr><td>Marko Ruzic</td><td>9.09%</td><td><span class="risk">CRITICAL</span></td></tr><tr><td>Arieth Rules</td><td>18 (11 High)</td><td><span class="win">+2 today</span></td></tr><tr><td>Hunt Rules</td><td>10</td><td><span class="win">+1 today</span></td></tr></table></div>
+<div class="section-title"><span class="section-icon">⚠️</span><h2>Stress Test</h2></div>
 <div class="card stress-card">
-<div style="margin-bottom:12px">
-<div class="risk">1. Visual deploy still blocked (Directive 001)</div>
-<div class="win-ctx">Netlify MCP identified as solution path but NOT tested. Every GitHub Pages deploy is Chrome-dependent and timeout-prone. Until this is solved, every visual output is fragile. Path confirmed today — needs execution.</div>
+<div style="margin-bottom:12px"><div class="risk">1. Visual Deploy Blocked (D001)</div><div style="color:#aaa;font-size:.88em">Sandbox blocks ALL hosting APIs. Single biggest bottleneck.</div></div>
+<div style="margin-bottom:12px"><div class="risk">2. Delegate Dead Zone: 11 Tasks</div><div style="color:#aaa;font-size:.88em">Rule 015 approved but not built. 8 overdue. Blocks Machine 3.</div></div>
+<div style="margin-bottom:12px"><div class="risk">3. Biggs: No Direct Sheets Access</div><div style="color:#aaa;font-size:.88em">Browser nav required. Row 14 done, M15-M33 remaining.</div></div>
+<div style="margin-bottom:12px"><div class="risk">4. Slack Channel Access Issues</div><div style="color:#aaa;font-size:.88em">#ops-daily no recent msgs. #ops-eod not found. Verify IDs.</div></div>
+<div style="margin-bottom:12px"><div class="risk">5. 3 Machines: Zero Movement</div><div style="color:#aaa;font-size:.88em">Recruitment, Academy, SPC all stalled. Strategic debt.</div></div>
+<div style="margin-bottom:12px"><div class="risk">6. No Email Agent</div><div style="color:#aaa;font-size:.88em">Outlook blind spot. Manual check daily.</div></div>
 </div>
-<div style="margin-bottom:12px">
-<div class="risk">2. Sales conversion is catastrophic at key positions</div>
-<div class="win-ctx">Marko: 9.09% (Location Leader). Kirk: 33.33% (Location Leader). Alice: 33.33% (SPC). These are the people who should be closing at 50%+. Overall March: 37.8%. This is a revenue leak, not a blip.</div>
-</div>
-<div style="margin-bottom:12px">
-<div class="risk">3. Email Agent doesn't exist</div>
-<div class="win-ctx">Outlook is browser-only, no API. Gmail triage is manual. Every morning's email section depends on Sephiroth scraping — no automated monitoring, no draft capability. VA covers some, but Carlin still checks manually.</div>
-</div>
-<div style="margin-bottom:12px">
-<div class="risk">4. Biggs can't read Google Sheets directly</div>
-<div class="win-ctx">The KPI Analyst can't access his primary data source. Carlin still has to export .xlsx and upload. This is the single biggest bottleneck to automated KPI reporting.</div>
-</div>
-<div style="margin-bottom:12px">
-<div class="risk">5. Paola Location Leader — still vacant</div>
-<div class="win-ctx">Paola generates €21K/month net profit (highest of 3 locations) with no leader. That's running on autopilot and hope. One bad week and there's nobody to catch it.</div>
-</div>
-<div style="margin-bottom:12px">
-<div class="risk">6. Tifa is day one — profiles need enrichment</div>
-<div class="win-ctx">11 profiles loaded from ChatGPT migration. No live cross-feed with Biggs (KPI data) or Arieth (task accountability) yet. Current profiles are historical snapshots, not real-time intelligence. Needs 2-3 weeks of data feeding to be reliable.</div>
-</div>
-<div style="margin-bottom:12px">
-<div class="risk">7. CRM AI still broken — "Fix AI issues" overdue since Mar 16</div>
-<div class="win-ctx">GoHighLevel AI is giving leads wrong service info (Pilates), wrong location (all Paola), old workflows firing. Customer-facing damage every day this sits. Blocked by CRM provider timezone lag. Rolling due date set — but the fix isn't in Carlin's hands.</div>
-</div>
-</div>
-<hr class="divider">
-<h2>🔮 WHAT'S NEXT</h2>
-<div class="card">
-<table>
-<tr><th>Move</th><th>Impact</th><th>Effort</th></tr>
-<tr><td>Test Netlify MCP deploy (Directive 001)</td><td><span class="tag tag-high">HIGH</span></td><td><span class="tag tag-med">MED</span></td></tr>
-<tr><td>Jessie's first live Intel Sweep (tomorrow 10:30 AM)</td><td><span class="tag tag-med">MED</span></td><td><span class="tag tag-low">LOW</span></td></tr>
-<tr><td>Arieth delegation system design (tonight's deep study)</td><td><span class="tag tag-high">HIGH</span></td><td><span class="tag tag-med">MED</span></td></tr>
-<tr><td>Enrich Tifa profiles with live KPI + Asana data</td><td><span class="tag tag-med">MED</span></td><td><span class="tag tag-med">MED</span></td></tr>
-<tr><td>Build first-90-day retention check-in workflow</td><td><span class="tag tag-high">HIGH</span></td><td><span class="tag tag-high">HIGH</span></td></tr>
-<tr><td>Address Marko's 9% conversion — coaching or conversation</td><td><span class="tag tag-high">HIGH</span></td><td><span class="tag tag-low">LOW</span></td></tr>
-<tr><td>Chase CRM provider on GoHighLevel AI fix</td><td><span class="tag tag-high">HIGH</span></td><td><span class="tag tag-low">LOW</span></td></tr>
-</table>
-</div>
-<hr class="divider">
-<div class="footer">
-⚔️ SEPHIROTH · Fit Stop · Evening Report · 20 March 2026
-</div>
-</body>
-</html>
+<div class="section-title"><span class="section-icon">🔮</span><h2>What's Next</h2></div>
+<div class="card"><table class="next-table"><tr><th>Move</th><th>Impact</th><th>Effort</th></tr><tr><td>Robbie meeting Mon</td><td><span class="tag tag-high">HIGH</span></td><td><span class="tag tag-low">LOW</span></td></tr><tr><td>Delegation system</td><td><span class="tag tag-high">HIGH</span></td><td><span class="tag tag-med">MED</span></td></tr><tr><td>Biggs KPI training</td><td><span class="tag tag-high">HIGH</span></td><td><span class="tag tag-med">MED</span></td></tr><tr><td>Verify Slack channels</td><td><span class="tag tag-med">MED</span></td><td><span class="tag tag-low">LOW</span></td></tr><tr><td>Solve D001 deploy</td><td><span class="tag tag-high">HIGH</span></td><td><span class="tag tag-high">HIGH</span></td></tr><tr><td>Weekly KPI Monday</td><td><span class="tag tag-med">MED</span></td><td><span class="tag tag-low">LOW</span></td></tr><tr><td>IG filming prep</td><td><span class="tag tag-med">MED</span></td><td><span class="tag tag-med">MED</span></td></tr></table></div>
+<div class="footer">SEPHIROTH · Fit Stop · Evening Report · 21 March 2026</div>
+</body></html>
