@@ -3,36 +3,34 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Sephiroth â Evening Report Â· 31 March 2026</title>
+<title>Sephiroth â Evening Report | 1 April 2026</title>
 <style>
-*{box-sizing:border-box;margin:0;padding:0}
-body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;background:#000;color:#e0e0e0;line-height:1.6}
-.container{max-width:680px;margin:0 auto;padding:16px}
-.header{text-align:center;padding:32px 0 24px;border-bottom:1px solid #1a1a1a}
-.brand{font-size:11px;letter-spacing:4px;color:#cc0000;text-transform:uppercase;font-weight:700}
-.title{font-size:22px;color:#fff;font-weight:700;margin:8px 0 4px}
-.date{font-size:28px;color:#cc0000;font-weight:700}
-.timestamp{font-size:12px;color:#808080;margin-top:4px}
-.card{background:#0a0a0a;border:1px solid #1a1a1a;border-radius:12px;padding:20px;margin:20px 0}
-.card h2{font-size:16px;color:#fff;font-weight:700;margin-bottom:14px;text-transform:uppercase;letter-spacing:1px}
-.power-card{border-left:3px solid #cc0000}
-.power-card h2{color:#cc0000}
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:#000;color:#e0e0e0;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;padding:16px;max-width:720px;margin:0 auto;line-height:1.6}
+h1{color:#fff;font-size:1.6em;font-weight:700;letter-spacing:1px}
+h2{color:#fff;font-size:1.15em;font-weight:600;margin-bottom:10px}
+.header{text-align:center;padding:28px 0 18px;border-bottom:2px solid #cc0000}
+.brand{color:#cc0000;font-size:.85em;letter-spacing:4px;text-transform:uppercase;font-weight:600}
+.date{color:#cc0000;font-size:1.4em;font-weight:700;margin:6px 0}
+.timestamp{color:#808080;font-size:.8em}
+.card{background:#0a0a0a;border:1px solid #1a1a1a;border-radius:12px;padding:18px;margin:18px 0}
+.power-card{border-left:4px solid #cc0000;background:#0a0a0a;border:1px solid #1a1a1a;border-left:4px solid #cc0000;border-radius:12px;padding:20px;margin:18px 0}
 .power-item{margin-bottom:16px}
-.power-num{color:#cc0000;font-weight:700;font-size:18px}
-.power-title{color:#fff;font-weight:600;font-size:15px}
-.power-impact{color:#aaa;font-size:13px;margin-top:2px}
-.empty-power{color:#666;font-style:italic;font-size:14px;padding:12px 0}
-.win-item{margin-bottom:10px;font-size:14px}
+.power-item:last-child{margin-bottom:0}
+.power-num{color:#cc0000;font-size:1.3em;font-weight:800;margin-right:6px}
+.power-title{color:#fff;font-weight:700;font-size:1em}
+.power-impact{color:#aaa;font-size:.88em;margin-top:3px;padding-left:28px}
+.win-item{margin-bottom:10px}
 .win-title{color:#fff;font-weight:600}
-.win-ctx{color:#aaa}
-.stat-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
-.stat-box{background:#0a0a0a;border:1px solid #1a1a1a;border-radius:8px;padding:14px;text-align:center}
-.stat-num{font-size:22px;font-weight:700;color:#fff}
-.stat-label{font-size:11px;color:#808080;text-transform:uppercase;letter-spacing:0.5px;margin-top:2px}
-table{width:100%;border-collapse:collapse;font-size:13px}
-th{text-align:left;color:#808080;font-weight:600;padding:8px 6px;border-bottom:1px solid #1a1a1a;text-transform:uppercase;font-size:11px;letter-spacing:0.5px}
-td{padding:8px 6px;border-bottom:1px solid #0d0d0d;color:#ccc}
-.tag{display:inline-block;padding:2px 8px;border-radius:4px;font-size:11px;font-weight:600}
+.win-context{color:#aaa;font-size:.88em}
+.stats-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin:14px 0}
+.stat-box{background:#0a0a0a;border:1px solid #1a1a1a;border-radius:10px;padding:14px 10px;text-align:center}
+.stat-num{color:#cc0000;font-size:1.5em;font-weight:800}
+.stat-label{color:#808080;font-size:.72em;text-transform:uppercase;letter-spacing:1px;margin-top:2px}
+table{width:100%;border-collapse:collapse;font-size:.88em}
+th{text-align:left;color:#808080;font-weight:600;padding:8px 6px;border-bottom:1px solid #1a1a1a;font-size:.78em;text-transform:uppercase;letter-spacing:.5px}
+td{padding:8px 6px;border-bottom:1px solid #0f0f0f;color:#e0e0e0}
+.tag{display:inline-block;padding:2px 8px;border-radius:4px;font-size:.72em;font-weight:600;text-transform:uppercase;letter-spacing:.5px}
 .tag-live{background:#0a2e0a;color:#4caf50}
 .tag-training{background:#2e2a0a;color:#ffc107}
 .tag-planned{background:#1a1a2e;color:#5c6bc0}
@@ -41,262 +39,66 @@ td{padding:8px 6px;border-bottom:1px solid #0d0d0d;color:#ccc}
 .tag-med{background:#2e2a0a;color:#ffc107}
 .tag-low{background:#0a2e0a;color:#4caf50}
 .risk{color:#ff5252;font-weight:600}
-.stress-card{border-left:3px solid #ff5252}
-.stress-card h2{color:#ff5252}
-.stress-item{margin-bottom:12px;font-size:14px}
-.stress-title{color:#ff5252;font-weight:600}
-.stress-detail{color:#aaa;font-size:13px;margin-top:2px}
-.time-bar{background:#1a1a1a;border-radius:6px;height:10px;margin:8px 0}
-.time-fill{background:linear-gradient(90deg,#cc0000,#ff5252);height:10px;border-radius:6px}
-.next-item{margin-bottom:10px;font-size:14px}
-.footer{text-align:center;padding:32px 0;color:#333;font-size:11px;letter-spacing:2px;text-transform:uppercase;border-top:1px solid #1a1a1a;margin-top:32px}
-.section-note{color:#666;font-size:12px;font-style:italic;margin-bottom:12px}
+.section-label{color:#808080;font-size:.72em;text-transform:uppercase;letter-spacing:2px;margin-bottom:8px;display:block}
+.stress-card{border-left:4px solid #ff5252;background:#0a0a0a;border:1px solid #1a1a1a;border-left:4px solid #ff5252;border-radius:12px;padding:18px;margin:18px 0}
+.stress-item{margin-bottom:12px;padding-bottom:12px;border-bottom:1px solid #111}
+.stress-item:last-child{border-bottom:none;margin-bottom:0;padding-bottom:0}
+.stress-title{color:#ff5252;font-weight:700;font-size:.95em}
+.stress-detail{color:#aaa;font-size:.85em;margin-top:3px}
+.time-bar-bg{background:#1a1a1a;border-radius:6px;height:10px;margin:6px 0}
+.time-bar-fill{background:linear-gradient(90deg,#cc0000,#ff5252);border-radius:6px;height:10px}
+.footer{text-align:center;padding:28px 0 18px;color:#808080;font-size:.75em;letter-spacing:2px;text-transform:uppercase;border-top:1px solid #1a1a1a;margin-top:28px}
+@media(max-width:480px){.stats-grid{grid-template-columns:repeat(2,1fr)}}
 </style>
 </head>
 <body>
-<div class="container">
 
-<!-- HEADER -->
 <div class="header">
 <div class="brand">âï¸ Sephiroth</div>
-<div class="title">Evening Report</div>
-<div class="date">Tuesday, 31 March 2026</div>
-<div class="timestamp">Generated 7:30 PM CEST Â· Day 14 of PA System</div>
+<h1>Evening Report</h1>
+<div class="date">Wednesday, 1 April 2026</div>
+<div class="timestamp">Generated 7:30 PM CEST</div>
 </div>
 
 <!-- POWER LIST -->
-<div class="card power-card">
-<h2>â¡ Power List â 0/5</h2>
-<div class="empty-power">
-No Power List items today. Tuesday = kids from 2pm, electrician at 9:30am. Dylan on leave (public holidays). Carlin's strategic work hours were limited. The system ran itself â 10 automated tasks executed across 7 agents overnight and through the day. Zero Asana tasks completed. Zero Slack activity from Carlin in #ops-daily.
+<div style="margin-top:22px">
+<span class="section-label">Power List â What Carlin Drove Today</span>
 </div>
-<div style="color:#666;font-size:12px;margin-top:10px;padding-top:10px;border-top:1px solid #1a1a1a">
-This is the honest count. 3 consecutive days with no briefing thread replies and no Asana completions. Holiday week + reduced availability. The system held the fort.
-</div>
+<div class="power-card">
+
+<div class="power-item">
+<span class="power-num">1.</span> <span class="power-title">Dylan 1-on-1 â Final Handoff Before 2-Week Leave</span>
+<div class="power-impact">Dylan is offline April 2â13. Every gap not addressed in this meeting sits unresolved for 12 days. This was the last chance to lock down ops coverage, delegate accountability, and surface blockers.</div>
 </div>
 
-<!-- OTHER WINS -->
-<div class="card">
-<h2>â Other Wins</h2>
-<div class="section-note">System ran autonomously while Carlin was offline</div>
-
-<div class="win-item">
-<span class="win-title">Reno found 5 new PT candidates</span> â
-<span class="win-ctx">Weekly talent sweep: Axel (24/7 Fitness, 6.0) and Kelly Ann Beerman (Sky Spirit Luqa, 6.0) flagged as competitor poaching decisions. 2 Asana tasks created. 3 others assessed and scored.</span>
+<div class="power-item">
+<span class="power-num">2.</span> <span class="power-title">Financial Reconciliation â Youth Voucher System Closed</span>
+<div class="power-impact">7-day overdue Power List item finally resolved. Government youth voucher scheme (â¬300/voucher) now tracked and cross-checked â stops revenue leakage from unreconciled invoices vs bank payments.</div>
 </div>
 
-<div class="win-item">
-<span class="win-title">Biggs filled all weekly KPIs autonomously</span> â
-<span class="win-ctx">Operations KPI sheet filled for week Mar 23-29. Active members: 406. PT Bookings: 360 (above 320 target). All Locations score: 8/13. Paola and San Gwann both at 2/9 â dragging composite down.</span>
+<div class="power-item">
+<span class="power-num">3.</span> <span class="power-title">Enabled Biggs KPI Dashboard â Google Sheet Published</span>
+<div class="power-impact">Carlin completed the manual step to publish the Ops KPI sheet to web, unlocking the self-updating dashboard. Eliminates Manus dependency and weekly manual credit burns â KPIs now auto-refresh on page load.</div>
 </div>
 
-<div class="win-item">
-<span class="win-title">Arieth executor processed 3 tasks at 3am</span> â
-<span class="win-ctx">CRM no-show task flagged for clarification (ambiguous). Duplicate "Lost Member Reactivation Agent" caught (Rule 011). KPI Dashboard publish instructions posted for Carlin's manual action.</span>
+<div class="power-item">
+<span class="power-num">4.</span> <span class="power-title">Weekly KPI Update Completed</span>
+<div class="power-impact">Business performance data is current for the first time in days. Decisions this week are based on real numbers, not last week's guesses. Feeds directly into the new Biggs dashboard.</div>
 </div>
 
-<div class="win-item">
-<span class="win-title">Sephiroth captured 10 new staff notes from Dylan's EOD</span> â
-<span class="win-ctx">business.md updated: Raisa removal (revenue write-off), Shelley Ann PTâSemi switch, Gabriel semi-PT resistance (2nd flag at Paola), Nicolai full-time summer interest, KPI rollout to 3 trainers, Sales Training WhatsApp sent.</span>
-</div>
-
-<div class="win-item">
-<span class="win-title">Jessie delivered 2 materia hunter finds</span> â
-<span class="win-ctx">HubSpot AEO Grader + Latch AI. Google Doc created. Awaiting Carlin's feedback â 7 finds now pending in queue.</span>
-</div>
-
-<div class="win-item">
-<span class="win-title">Reno pipeline update: 2 active candidates progressing</span> â
-<span class="win-ctx">Miguel Pinedo: 2nd interview pending, references verified. Silje Marie Ahlsen: interview done, 2nd interview approved. 2 others going cold (Lucas, NoÃ©mi).</span>
+<div class="power-item">
+<span class="power-num">5.</span> <span class="power-title">CRM Calendar Sales Tracking â Resolved</span>
+<div class="power-impact">Closed a lingering sales accuracy issue. Lead pipeline visibility is now clean â consultation tracking reflects reality, not CRM drift.</div>
 </div>
 
 </div>
 
-<!-- KEY STATS -->
-<div class="stat-grid">
-<div class="stat-box">
-<div class="stat-num">9</div>
-<div class="stat-label">Agents Live</div>
-</div>
-<div class="stat-box">
-<div class="stat-num">29</div>
-<div class="stat-label">Scheduled Tasks</div>
-</div>
-<div class="stat-box">
-<div class="stat-num">14</div>
-<div class="stat-label">Skills Built</div>
-</div>
-<div class="stat-box">
-<div class="stat-num">8</div>
-<div class="stat-label">Connected Systems</div>
-</div>
-<div class="stat-box">
-<div class="stat-num">9.2</div>
-<div class="stat-label">Hrs Saved/Week</div>
-</div>
-<div class="stat-box">
-<div class="stat-num">78%</div>
-<div class="stat-label">System Maturity</div>
-</div>
-</div>
+<!-- REST -->
+<div style="margin-top:22px"><span class="section-label">Other Wins</span></div>
+<div class="card"><div class="win-item"><span class="win-title">Follow up Thiago completed</span> â <span class="win-context">Contract/work permit follow-up actioned.</span></div><div class="win-item"><span class="win-title">Block consultations for May holiday</span> â <span class="win-context">Arieth processed and delegated.</span></div><div class="win-item"><span class="win-title">Dylan meeting prep auto-generated</span> â <span class="win-context">Interactive HTML agenda created by Sephiroth at 8am.</span></div><div class="win-item"><span class="win-title">Briefing deployed to Netlify</span> â <span class="win-context">Both 5am and 5pm runs posted successfully.</span></div><div class="win-item"><span class="win-title">Arieth dump clean at 6pm</span> â <span class="win-context">Dump discipline holding.</span></div><div class="win-item"><span class="win-title">Multiple PA agent files updated</span> â <span class="win-context">Biggs, Tifa, Wedge, materia-library all modified.</span></div><div class="win-item"><span class="win-title">Jessie found Acuity SMS Reminders</span> â <span class="win-context">15 mins to activate. Zero cost. Solves no-show problem.</span></div></div>
 
-<!-- AGENTS -->
-<div class="card">
-<h2>ð¤ Agents</h2>
-<table>
-<tr><th>Agent</th><th>Role</th><th>Status</th></tr>
-<tr><td>Sephiroth</td><td>Chief PA â orchestrates everything</td><td><span class="tag tag-live">LIVE</span></td></tr>
-<tr><td>Arieth</td><td>Asana â Carlin Personal project</td><td><span class="tag tag-training">PHASE 1</span></td></tr>
-<tr><td>Biggs</td><td>KPI Analyst â Sheets + Arbox + Acuity</td><td><span class="tag tag-live">v2 LIVE</span></td></tr>
-<tr><td>Jessie</td><td>Competitor Intel + Materia Hunter</td><td><span class="tag tag-live">LIVE</span></td></tr>
-<tr><td>Tifa</td><td>HR â employee intelligence</td><td><span class="tag tag-training">PHASE 1</span></td></tr>
-<tr><td>Yuffie</td><td>Content Scout â social media strategy</td><td><span class="tag tag-training">PHASE 1</span></td></tr>
-<tr><td>Wedge</td><td>Email â Gmail triage + labelling</td><td><span class="tag tag-live">v2 LIVE</span></td></tr>
-<tr><td>Reno</td><td>Talent Scout â recruitment pipeline</td><td><span class="tag tag-live">LIVE</span></td></tr>
-<tr><td>Barret</td><td>Trainerize Quality Watchdog</td><td><span class="tag tag-live">LIVE</span></td></tr>
-</table>
-</div>
+<div style="margin-top:22px"><span class="section-label">Key Stats</span></div>
+<div class="stats-grid"><div class="stat-box"><div class="stat-num">8</div><div class="stat-label">Agents Live</div></div><div class="stat-box"><div class="stat-num">32</div><div class="stat-label">Scheduled Tasks</div></div><div class="stat-box"><div class="stat-num">19</div><div class="stat-label">Skills Built</div></div><div class="stat-box"><div class="stat-num">12</div><div class="stat-label">Connected Systems</div></div><div class="stat-box"><div class="stat-num">9.2</div><div class="stat-label">Hrs Saved / Week</div></div><div class="stat-box"><div class="stat-num">75%</div><div class="stat-label">System Maturity</div></div></div>
 
-<!-- SCHEDULED AUTOMATIONS -->
-<div class="card">
-<h2>â° Today's Automated Runs</h2>
-<table>
-<tr><th>Task</th><th>Time</th><th>Status</th></tr>
-<tr><td>Arieth Signal Sweep</td><td>12:15 AM</td><td><span class="tag tag-live">â RAN</span></td></tr>
-<tr><td>Biggs Weekly KPI Fill</td><td>1:00 AM</td><td><span class="tag tag-live">â RAN</span></td></tr>
-<tr><td>Jessie Materia Hunt</td><td>2:00 AM</td><td><span class="tag tag-live">â RAN</span></td></tr>
-<tr><td>Arieth Executor</td><td>3:00 AM</td><td><span class="tag tag-live">â RAN</span></td></tr>
-<tr><td>Daily Briefing</td><td>5:09 AM</td><td><span class="tag tag-live">â RAN</span></td></tr>
-<tr><td>Reno Talent Hunt</td><td>6:00 AM</td><td><span class="tag tag-live">â RAN</span></td></tr>
-<tr><td>EOD Follow-up</td><td>10:00 AM</td><td><span class="tag tag-live">â RAN</span></td></tr>
-<tr><td>Arieth-Jessie Sync</td><td>11:00 AM</td><td><span class="tag tag-live">â RAN</span></td></tr>
-<tr><td>Arieth Dump Sort</td><td>6:00 PM</td><td><span class="tag tag-live">â RAN</span></td></tr>
-<tr><td>Evening Report</td><td>7:30 PM</td><td><span class="tag tag-training">RUNNING</span></td></tr>
-<tr><td>Wedge Gmail Triage</td><td>9:00 PM</td><td><span class="tag tag-planned">QUEUED</span></td></tr>
-<tr><td>Arieth Deep Study</td><td>11:30 PM</td><td><span class="tag tag-planned">QUEUED</span></td></tr>
-</table>
-<div style="color:#808080;font-size:12px;margin-top:10px">10 of 12 daily tasks completed. 29 total active scheduled tasks across the system.</div>
-</div>
-
-<!-- TIME SAVINGS -->
-<div class="card">
-<h2>â±ï¸ Time Savings</h2>
-
-<div style="margin-bottom:16px">
-<div style="display:flex;justify-content:space-between;align-items:baseline">
-<span style="color:#fff;font-size:20px;font-weight:700">~9.2 hrs saved this week</span>
-<span style="color:#808080;font-size:12px">Target: 12 hrs (fully operational)</span>
-</div>
-<div class="time-bar"><div class="time-fill" style="width:77%"></div></div>
-</div>
-
-<table>
-<tr><th>Category</th><th>Agent</th><th>Manual</th><th>Now</th><th>Saved</th></tr>
-<tr><td>Asana management</td><td>Arieth</td><td>150 min</td><td>10 min</td><td>140 min</td></tr>
-<tr><td>Email triage</td><td>Wedge</td><td>180 min</td><td>10 min</td><td>170 min</td></tr>
-<tr><td>KPI tracking</td><td>Biggs</td><td>90 min</td><td>10 min</td><td>80 min</td></tr>
-<tr><td>Morning briefing</td><td>Sephiroth</td><td>50 min</td><td>10 min</td><td>40 min</td></tr>
-<tr><td>EOD review</td><td>Sephiroth</td><td>25 min</td><td>0 min</td><td>25 min</td></tr>
-<tr><td>Meeting prep</td><td>Sephiroth</td><td>10 min</td><td>0 min</td><td>10 min</td></tr>
-<tr><td>Content planning</td><td>Yuffie</td><td>50 min</td><td>10 min</td><td>40 min</td></tr>
-<tr><td>HR intelligence</td><td>Tifa</td><td>60 min</td><td>10 min</td><td>50 min</td></tr>
-<tr style="font-weight:600;color:#fff"><td colspan="4">Weekly Total</td><td>555 min (~9.2 hrs)</td></tr>
-</table>
-
-<div style="margin-top:14px;padding-top:14px;border-top:1px solid #1a1a1a">
-<div style="display:flex;justify-content:space-between;font-size:13px;color:#aaa">
-<span>Since Launch (Day 14): ~129 hrs saved</span>
-<span>Annual Projection: ~478 hrs</span>
-</div>
-</div>
-</div>
-
-<!-- STRATEGIC INTELLIGENCE -->
-<div class="card">
-<h2>ð Strategic Intelligence</h2>
-<table>
-<tr><th>Metric</th><th>Value</th><th>Target</th><th>Status</th></tr>
-<tr><td>Active Members</td><td>406</td><td>400</td><td><span class="tag tag-live">ABOVE</span></td></tr>
-<tr><td>Weekly PT Bookings</td><td>360</td><td>320</td><td><span class="tag tag-live">ABOVE</span></td></tr>
-<tr><td>Total Booked Leads (wk)</td><td>34</td><td>15</td><td><span class="tag tag-live">2.3x</span></td></tr>
-<tr><td>Closed Sales (wk)</td><td>9</td><td>10</td><td><span class="tag tag-training">CLOSE</span></td></tr>
-<tr><td>All Locations KPI Score</td><td>8/13</td><td>9/13 (70%)</td><td><span class="tag tag-training">62%</span></td></tr>
-<tr><td>Luqa KPI Score</td><td>4/9</td><td>7/9</td><td><span class="tag tag-high">44%</span></td></tr>
-<tr><td>Paola KPI Score</td><td>2/9</td><td>7/9</td><td><span class="tag tag-high">22%</span></td></tr>
-<tr><td>San Gwann KPI Score</td><td>2/9</td><td>7/9</td><td><span class="tag tag-high">22%</span></td></tr>
-<tr><td>Feb Retention</td><td>88%</td><td>95%</td><td><span class="tag tag-high">7pts OFF</span></td></tr>
-<tr><td>Arieth Rules</td><td>32</td><td>â</td><td><span class="tag tag-live">22 HIGH</span></td></tr>
-</table>
-<div style="color:#ff5252;font-size:13px;margin-top:10px;font-weight:600">â ï¸ Paola and San Gwann both at 2/9 KPI score â first autonomous Biggs fill reveals how far behind these locations are.</div>
-</div>
-
-<!-- STRESS TEST -->
-<div class="card stress-card">
-<h2>ð¥ Stress Test â What's NOT Bulletproof</h2>
-
-<div class="stress-item">
-<div class="stress-title">1. Carlin engagement gap â 3 days dark</div>
-<div class="stress-detail">No briefing thread replies since March 28. 6 Arieth questions stale, 7 Jessie finds pending without feedback. The learning loop is stalled. Agents can't level up without corrections. Holiday week explains it, but the backlog is real.</div>
-</div>
-
-<div class="stress-item">
-<div class="stress-title">2. Power List curation impossible without input</div>
-<div class="stress-detail">Arieth's Rule 028 daily gate check can't curate 5 critical tasks when Carlin isn't adding tasks or answering questions. The Power List has been empty or near-empty for 3 days. The system can maintain â it can't prioritise Carlin's day without Carlin.</div>
-</div>
-
-<div class="stress-item">
-<div class="stress-title">3. Dylan on leave â no ops manager this week</div>
-<div class="stress-detail">Public holidays. No confirmation call coverage for consultations. Last time Dylan was out (Mar 19-22), all morning consults were no-shows. Same risk exists right now. No backup owner designated.</div>
-</div>
-
-<div class="stress-item">
-<div class="stress-title">4. Semi-PT resistance pattern forming at Paola</div>
-<div class="stress-detail">Gabriel (Mar 30) and Jerushia (Mar 27). Different stated reasons â responsibility vs money â but same hesitation. Two flags in 3 days at the same location. Worth a direct conversation before it spreads.</div>
-</div>
-
-<div class="stress-item">
-<div class="stress-title">5. Location KPI scores are alarming</div>
-<div class="stress-detail">Paola 2/9, San Gwann 2/9, Luqa 4/9. Composite 62%. Target is 70%. First autonomous Biggs fill â and the reality check is stark. Both non-Luqa locations are significantly underperforming.</div>
-</div>
-
-<div class="stress-item">
-<div class="stress-title">6. Financial reconciliation task â 6 days overdue</div>
-<div class="stress-detail">Due March 25, still open. Surfaced in every briefing since. Needs a decision: re-date, delegate, or close.</div>
-</div>
-
-<div class="stress-item">
-<div class="stress-title">7. Lost Members KPI has no data source</div>
-<div class="stress-detail">Biggs couldn't fill weekly cancellation count. No automated source exists. The single most important retention metric is flying blind.</div>
-</div>
-
-<div class="stress-item">
-<div class="stress-title">8. AGENT-TASK tagging gap â 5 days dry</div>
-<div class="stress-detail">No new AGENT-TASKs tagged since March 26. The 3am executor has nothing to work with. Either no agent-directed tasks are being added, or the tagging system isn't firing.</div>
-</div>
-
-</div>
-
-<!-- WHAT'S NEXT -->
-<div class="card">
-<h2>ð¯ What's Next</h2>
-<table>
-<tr><th>Move</th><th>Impact</th><th>Effort</th></tr>
-<tr><td>Clear Arieth question backlog â 6 questions need answers to unblock agent learning</td><td><span class="tag tag-high">HIGH</span></td><td><span class="tag tag-low">LOW</span></td></tr>
-<tr><td>Define Lost Members data source for Biggs â weekly cancellation count</td><td><span class="tag tag-high">HIGH</span></td><td><span class="tag tag-low">LOW</span></td></tr>
-<tr><td>Competitor poaching decisions â Axel (24/7) and Kelly Ann (Sky Spirit)</td><td><span class="tag tag-high">HIGH</span></td><td><span class="tag tag-med">MED</span></td></tr>
-<tr><td>Address Paola + San Gwann KPI scores â 2/9 needs root cause conversation</td><td><span class="tag tag-high">HIGH</span></td><td><span class="tag tag-med">MED</span></td></tr>
-<tr><td>Enable Biggs KPI Dashboard â 2-minute manual publish action</td><td><span class="tag tag-med">MED</span></td><td><span class="tag tag-low">LOW</span></td></tr>
-<tr><td>Resolve financial reconciliation â 6 days overdue</td><td><span class="tag tag-med">MED</span></td><td><span class="tag tag-low">LOW</span></td></tr>
-<tr><td>Semi-PT resistance at Paola â 2 flags in 3 days needs Carlin's read</td><td><span class="tag tag-med">MED</span></td><td><span class="tag tag-low">LOW</span></td></tr>
-<tr><td>Review Jessie pending finds (7 tools) â or signal to drop stale ones</td><td><span class="tag tag-low">LOW</span></td><td><span class="tag tag-low">LOW</span></td></tr>
-</table>
-</div>
-
-<!-- FOOTER -->
-<div class="footer">
-âï¸ Sephiroth Â· Fit Stop Â· Evening Report Â· 31 March 2026
-</div>
-
-</div>
-</body>
-                                                                      </html>
+<div class="footer">âï¸ Sephiroth Â· Fit Stop Â· Evening Report Â· 1 April 2026</div>
+</body></html>
